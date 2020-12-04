@@ -9,4 +9,4 @@ matrix:
 install:
 - pip install requests
 script:
-- python3 DBtest.py
+- python3 test.py
