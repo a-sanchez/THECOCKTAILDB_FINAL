@@ -83,7 +83,7 @@ class DB_Coctel(Database):
             query = f'''
                 select * from COCTELES where name = "{name}";
             '''
-            return self.cursor.execute(query).fetchone() 
+            return self.cursor.execute(query).fetchone()
         except : return "ERROR"
             
         
@@ -94,15 +94,12 @@ class DB_Coctel(Database):
             '''
             return self.cursor.execute(query).fetchall()
         except : return "ERROR"
-        
-    
-    
     
 if __name__ == "__main__":
     pass
     
     #bd = DB_Coctel()
-   #bd.create_table()
+    #bd.create_table()
     #bd.addCoctel(11007,"Margarita","Ordinary Drink","Alcoholic","Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass","https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",['Tequila','Triple sec','LIme juice','Salt'])
     #print(bd.readCocteles())
     #ID 15328
@@ -115,4 +112,4 @@ if __name__ == "__main__":
     #bd.deleteCoctel("Rose")
     #print(bd.readCocteles())
     #print(bd.readCoctel("Margarita"))
-    #rint(bd.readCocteles())
+    #print(bd.readCocteles())
